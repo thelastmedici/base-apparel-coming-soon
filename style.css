@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 @font-face {
     font-family: 'Josefin Sans';
     src: url(https://fonts.gstatic.com/s/josefinsans/v32/Qw3aZQNVED7rKGKxtqIqX5EUAnx4RHw.woff2) format('woff2');
     font-weight: 300;
 }
+
 @font-face {
     font-family: 'Josefin Sans';
     src: url(https://fonts.gstatic.com/s/josefinsans/v32/Qw3aZQNVED7rKGKxtqIqX5EUAnx4RHw.woff2) format('woff2');
     font-weight: 400;
 }
+
 @font-face {
     font-family: 'Josefin Sans';
     src: url(https://fonts.gstatic.com/s/josefinsans/v32/Qw3aZQNVED7rKGKxtqIqX5EUAnx4RHw.woff2) format('woff2');
     font-weight: 600;
 }
+
 *,
 ::before,
 ::after{
@@ -21,16 +25,53 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-size: 16px;
 }
+
 .container{
     max-width: 1400px;
     width: 100%;
     height: fit-content;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    background-image:url("./images/bg-pattern-desktop.svg");
+}
+.img{
+    padding-top: 0px;
+}
+
+.right-card{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    
+    & h1{
+        text-transform: uppercase;
+        font-size: 51px;
+    }
+
+    & p{
+        font-family: "Josefin Sans", sans-serif;
+        color: hsl(0, 36%, 70%);
+        line-height: 1.5rem;
+    }
+}
+
+
+
+
+
+
+footer{
     display: flex;
     justify-content: center;
     align-items: center;
