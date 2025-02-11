@@ -16,6 +16,13 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+}
+
 .container {
   max-width: 1400px;
   width: 100%;
@@ -53,7 +60,7 @@ body {
   font-weight: 300;
 }
 
-p {
+p{
     font-size: 16px;
     color: hsl(0, 36%, 70%);
     line-height: 1.5rem;
@@ -61,13 +68,14 @@ p {
     max-width: 400px;
     margin-bottom: 40px;
 }
+
 input {
   border: 1px solid hsl(0, 36%, 70%);
   border-radius: 30px;
   padding-top: 22px;
   padding-bottom: 22px;
   padding-left: 21px;
-}    
+}
 
 .left-card{
     height: 800px;
