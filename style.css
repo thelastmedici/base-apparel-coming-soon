@@ -54,6 +54,9 @@ form {
   letter-spacing: 8px;
   color: hsl(0, 6%, 24%);
 }
+.hero-image-mobile{
+    display: none;
+}
 
 .header h1 span {
   color: hsl(0, 36%, 70%);
@@ -116,7 +119,7 @@ footer{
     width: 100%;
     text-align: center;
     padding-left: 31px;
-    margin-left: 171px;
+    margin-left:171px;
   }
 
   .header h1 {
@@ -126,9 +129,16 @@ footer{
   .left-card{
       width: 100%;
       height: auto;
-
-      /* & img{
-          order: -1;
-      } */
+      display: none;
+  
   }
+  .hero-image-mobile{
+        display: block;
+        margin: 0 auto 2rem auto;
+  }
+  footer {
+    padding-top: 90px;
+    padding-left: 120px;
+    text-decoration: none;
+}
 }
