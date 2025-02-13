@@ -31,7 +31,7 @@ form {
   align-items: center;
   background-image: url("./images/bg-pattern-desktop.svg");
   background-position: -60px center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 800px;
 }
 
@@ -106,25 +106,29 @@ footer{
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:375px) {
   .container {
     flex-direction: column;
-    height: 100%;
+    height: auto;
   }
 
   .right-card {
     width: 100%;
-    padding: 0 20px;
     text-align: center;
+    padding-left: 31px;
+    margin-left: 171px;
   }
 
   .header h1 {
     font-size: 40px;
   }
 
-  .img {
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+  .left-card{
+      width: 100%;
+      height: auto;
+
+      /* & img{
+          order: -1;
+      } */
   }
-  
 }
