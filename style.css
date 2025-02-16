@@ -29,6 +29,10 @@ form {
   color:hsl(0, 93%, 68%);
   font-size: 14px;
   display: none;
+  
+}
+.error-text.visible{
+  display: block;
 }
 .icon-error {
   position: absolute;
@@ -36,7 +40,7 @@ form {
   right: 6.125rem;
   font-size: 18px;
   color: red;
-  display: none;
+
 }
 
 .container {
