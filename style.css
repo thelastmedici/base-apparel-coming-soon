@@ -22,6 +22,14 @@ form {
   align-items: center;
   max-width: 400px;
 }
+.icon-error {
+  position: absolute;
+  top: 0.875rem;
+  right: 6.125rem;
+  font-size: 18px;
+  color: red;
+  display: none;
+}
 
 .container {
   max-width: 1400px;
