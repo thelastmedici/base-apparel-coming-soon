@@ -131,18 +131,36 @@ footer{
   text-decoration: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 1399px){
+  /*tablet screens*/
   .container {
     flex-direction: row;
     height: auto;
     gap: 50px;
     margin-bottom: 12px;
+    background-position: center top;
+  }
+  .right-card {
+    width: 50%;
+    height: auto;
+    padding-left: 50px;
+  }
+  .heading{
+    padding-left: 4px;
+  }
+  .left-card{
+      width: 50%;
+      height: auto;
+  }
+  .header h1{
+    font-size: 50px;
   }
 
 }
-@media screen and (min-width:375px)  and (max-width: 767px){
+@media screen and (max-width:375px){
   .container {
     flex-direction: column;
     height: auto;
+    margin-right: 233px;
   }
 
   .right-card {
