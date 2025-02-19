@@ -144,9 +144,7 @@ footer{
     height: auto;
     padding-left: 50px;
   }
-  .heading{
-    padding-left: 4px;
-  }
+  
   .left-card{
       width: 50%;
       height: auto;
@@ -156,40 +154,56 @@ footer{
   }
 
 }
-@media screen and (max-width:375px){
+
+@media only screen and (max-width: 767px) {
   .container {
+    /* Single-column layout */
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: auto;
-    margin-right: 233px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
 
+  /* Hide the desktop image card */
+  .left-card {
+    display: none;
+  }
+
+  /* Show the mobile hero image */
+  .hero-image-mobile {
+    display: block;
+    width: 100%;
+    margin: 3rem auto 2rem auto;
+  }
+
+  /* Make the text container full-width and centered */
   .right-card {
     width: 100%;
+    height: auto;
+    padding-left: 0;
     text-align: center;
-    padding-left: 31px;
-    margin-left:171px;
-    align-items: center;
+    margin: 0 auto;
   }
 
+  /* Adjust heading size for smaller screens */
   .header h1 {
     font-size: 40px;
   }
 
-  .left-card{
-      width: 100%;
-      height: auto;
-      display: none;
-  
-  }
-  .hero-image-mobile{
-        display: block;
-        margin: 3rem auto 2rem auto;
 
-        
+  /* Center the paragraph text */
+  p {
+    margin-left: auto;
+    margin-right: auto;
   }
+  form{
+    margin-left: 150px;
+  }
+
+  /* Footer spacing on mobile */
   footer {
     padding-top: 90px;
-    padding-left: 120px;
-    text-decoration: none;
-}
+  }
 }
