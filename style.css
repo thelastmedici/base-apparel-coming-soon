@@ -130,44 +130,16 @@ footer{
   padding-top: 20px;
   text-decoration: none;
 }
-@media screen and (max-width: 600px){
+@media only screen and (min-width: 768px) and (max-width: 1399px){
   .container {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
+    gap: 50px;
+    margin-bottom: 12px;
   }
 
-  .right-card {
-    width: 100%;
-    text-align: center;
-    padding-left: 31px;
-    margin-left:171px;
-    align-items: center;
-  }
-
-  .header h1 {
-    font-size: 40px;
-  }
-
-  .left-card{
-      width: 100%;
-      height: auto;
-      display: none;
-  
-  }
-  .hero-image-mobile{
-        display: block;
-        margin: 3rem auto 2rem auto;
-
-        
-  }
-  footer {
-    padding-top: 90px;
-    padding-left: 120px;
-    text-decoration: none;
-  }
 }
-
-@media screen and (max-width:375px) {
+@media screen and (min-width:375px)  and (max-width: 767px){
   .container {
     flex-direction: column;
     height: auto;
