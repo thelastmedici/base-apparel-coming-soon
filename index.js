@@ -3,6 +3,7 @@ const errorImage = document.querySelector('form img');
 const errorText = document.querySelector('.error-text');
 const inputField = document.querySelector('form input[type="text"]');
 
+
 button.addEventListener('click', function(event) {
   event.preventDefault();
   const email = document.querySelector('form input[type="text"]').value.trim();
@@ -14,7 +15,11 @@ button.addEventListener('click', function(event) {
   else{
     errorImage.classList.remove('icon-error');
     errorText.style.display = 'none';
-    inputField.value = ''; // Clear the input field after successful submission
+    inputField.value = ''; 
   }
 });
 
+inputField.addEventListener('input', function(){
+  errorImage.classList.remove('icon-error');
+  errorText.style.display = 'none';
+});
