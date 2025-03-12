@@ -10,7 +10,6 @@ button.addEventListener('click', function(event) {
   if (!email || ! email.includes('@')) {
       errorImage.classList.add('icon-error');
       errorText.style.display = 'block';
-      // inputField.style.display.color = 'red';
     }
   else{
     errorImage.classList.remove('icon-error');
